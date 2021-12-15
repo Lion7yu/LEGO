@@ -2,9 +2,13 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect,
 } from "react-router-dom";
+
+import NoMatch from "views/NoMatch";
+import Lego from "views/Lego";
+import User from "views/User";
+import Export from "views/Export";
 
 function App() {
   return (
@@ -29,21 +33,4 @@ function App() {
     </Router>
   );
 }
-
-function Export() {
-  return <h2>Export</h2>;
-}
-
-function Lego() {
-  return <h2>LEGO</h2>;
-}
-
-function User() {
-  return <h2>User</h2>;
-}
-
-function NoMatch() {
-  return <h1>404 Not found</h1>;
-}
-
 export default App;
